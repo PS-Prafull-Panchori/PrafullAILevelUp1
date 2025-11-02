@@ -50,5 +50,8 @@ pip install -r requirements.txt
 python .\main.py
 
 ```
+<h2>Note: Ignore SSL Certificate error
 
+The error only affects analytics upload, your local chat UI still works at the shown URL. </h2>
 
+ 
