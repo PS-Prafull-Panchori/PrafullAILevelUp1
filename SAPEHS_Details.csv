@@ -1,0 +1,34 @@
+Title,Date,SAPEHS,Test
+SAP's Environment, Health, and Safety (EHS) solutions help organizations manage compliance, safety, and environmental impacts effectively through integrated software.
+Overview of SAP EHS
+SAP EHS is designed to support organizations in managing their environmental, health, and safety processes. It provides a comprehensive framework that integrates various functionalities to ensure compliance with regulations, enhance workplace safety, and minimize environmental impacts.
+Key Features of SAP EHS
+Incident Management: The software simplifies incident handling, allowing organizations to track, investigate, and implement corrective actions for workplace incidents efficiently. 
+1
+Risk Assessment: EHS solutions help identify hazards and mitigate risks, promoting a safer workplace culture. This includes real-time tracking of compliance issues and analytics tools to monitor safety performance. 
+2
+Environmental Management: The software enables companies to assess and optimize their environmental impact, including tracking emissions and ensuring compliance with environmental regulations. 
+1
+Integration with Other SAP Modules: SAP EHS integrates seamlessly with other SAP components, such as ERP and HR systems, allowing for comprehensive data management and reporting. 
+1
+Automated Compliance Tracking: Organizations can automate safety processes and compliance tracking, reducing operational risks and ensuring adherence to safety standards. 
+3 Sources
+Benefits of Using SAP EHS
+Enhanced Safety: By implementing EHS solutions, organizations can reduce incidents and improve overall workplace safety.
+Operational Efficiency: The integration of EHS with other business processes leads to streamlined operations and cost savings.
+Regulatory Compliance: SAP EHS helps organizations stay compliant with local and international regulations, minimizing the risk of fines and legal issues.
+Learning and Implementation
+For those interested in exploring SAP EHS further, SAP offers learning journeys and resources to understand the various modules and their functionalities. This can help organizations implement EHS solutions effectively to meet their specific needs. 
+SAP
+In summary, SAP EHS provides a robust framework for managing environmental, health, and safety processes, enabling organizations to create safer workplaces while ensuring compliance with regulations.
+One solution to this problem is to intensify communication between the customer and the development team and get feedback as soon as possible. An agile process model that focuses on this is Behavior Driven Development (BDD).
+BDD focuses on the behavior of the user and attempts to establish consistency between requirements, implementation, and testing - a common understanding. For this purpose, examples are specified, so-called scenarios, which describe the behavior. This is often done during  "3 Amigos Sessions", in which business, developers, and QA work together.
+BDD is quite similar to acceptance test-driven software development (ATDD). In addition, there is a focus on automation: scenarios should serve as executable specifications - they should be automatically testable.
+Scenarios are written in a specific language called Gherkin, like this scenario for an online shopping system:
+Feature: Discount calculation
+Scenario: Discount on Slayer albums for VIP Slayer fans (exclusive contract with BMG)
+GIVEN the customers first name is Dominik and his last name is Panzer
+AND his birthdate according to our CRM system is 06.06.2006
+WHEN the sales clerk lets the system calculate the customers discount on a Slayer album
+THEN the discount is 66% \m/
+You might already know Gherkin and the GIVEN ... WHEN ... THEN pattern. It's quite similar to ARRANGE... ACT... ASSERT. They are both techniques to give unit tests a clear structure.
