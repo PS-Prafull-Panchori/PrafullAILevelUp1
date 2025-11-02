@@ -4,7 +4,7 @@ from langchain_core.documents import Document
 import os
 import pandas as pd
 
-df = pd.read_csv("SAPEHS_Details.csv")
+df = pd.read_csv("SAP_SDS_Reviews.csv")
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
 db_location = "./chrome_langchain_db"
@@ -16,8 +16,8 @@ if add_documents:
     
     for i, row in df.iterrows():
         document = Document(
-            page_content=row["Title"] + " " + row["SAPEHS"],
-            metadata={"test": row["Test"], "date": row["Date"]},
+            page_content=row["Title"] + " " + row["Review"],
+            metadata={"rating": row["Rating"], "date": row["Date"]},
             id=str(i)
         )
         ids.append(str(i))

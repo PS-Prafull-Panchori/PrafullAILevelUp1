@@ -7,7 +7,7 @@ model = OllamaLLM(model="llama3.2")
 template = """
 You are an exeprt in answering questions about SAP EHS
 
-Here are some relevant Data: {SAPEHS}
+Here are some relevant reviews: {reviews}
 
 Here is the question to answer: {question}
 """
@@ -21,6 +21,6 @@ while True:
     if question == "q":
         break
     
-    SAPEHS = retriever.invoke(question)
-    result = chain.invoke({"SAPEHS": SAPEHS, "question": question})
+    reviews = retriever.invoke(question)
+    result = chain.invoke({"reviews": reviews, "question": question})
     print(result)
