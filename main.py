@@ -74,12 +74,13 @@ def chat_fn(message, history):
 def main():
     gr.ChatInterface(
         fn=chat_fn,
-        title="SAP EHS Agent (RAG, Ollama)",
+        title="SAP EHS Agent (RAG, Ollama) Created by Prafull Panchori",
         description=(
             "Ask questions about SAP EHS. The assistant uses your local RAG index for context. "
             "If the answer isn't in the retrieved snippets, it will say 'Not in provided context.'"
         ),
         examples=[
+            "Please click on this or type - What is SAP EHS"
             "What do the reviews say about Section 12.6 in SDS?",
             "Summarize feedback on identifiers and language handling.",
             "Any notes about Section 9 appearance suppression?"
